@@ -24,6 +24,7 @@ export class ProductAddComponent implements OnInit {
 
   addProduct(ProductName, ProductDescription, ProductPrice) {
     this.ps.addProduct(ProductName, ProductDescription, ProductPrice);
+    window.location.href = '/products';
   }
 
   ngOnInit() {
